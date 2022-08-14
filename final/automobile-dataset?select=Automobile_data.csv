@@ -1,0 +1,229 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Automobile Dataset | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="Dataset consist of various characteristic of an auto" />
+  <meta name="turbolinks-cache-control" content="no-cache" />
+    <meta name="keywords" content="automobiles and vehicles" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="e6NzPqtsUlsdxDxl2jpu&#x2B;w==" type="text/javascript">
+    window["pageRequestStartTime"] = 1660431580140;
+    window["pageRequestEndTime"] = 1660431580243;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+  <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="e6NzPqtsUlsdxDxl2jpu&#x2B;w==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+    <link rel="canonical" href="/datasets/toramky/automobile-dataset" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/vendor.css?v=75916b9cccfe514b1d11" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=73b49040c4f4395dc798" />
+  
+    
+ 
+      <script nonce="e6NzPqtsUlsdxDxl2jpu&#x2B;w==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="e6NzPqtsUlsdxDxl2jpu&#x2B;w==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-12629138-1', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets'
+        });
+    </script>
+    <script nonce="e6NzPqtsUlsdxDxl2jpu&#x2B;w==" async src="https://www.googletagmanager.com/gtag/js?id=UA-12629138-1"></script>
+
+  
+    
+    <meta property="og:url" content="/datasets/toramky/automobile-dataset" />
+    <meta property="og:title" content="Automobile Dataset" />
+    <meta property="og:description" content="Dataset consist of various characteristic of an auto" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/1291/2317/5f8baa83e9cf3ebd0c66559b31feacc2/dataset-card.jpg" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+    <script nonce="e6NzPqtsUlsdxDxl2jpu+w==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"Automobile Dataset","description":"### Context \nThis dataset consist of data From 1985 Ward's Automotive Yearbook. Here are the sources\n\nSources: \n\n1) 1985 Model Import Car and Truck Specifications, 1985 Ward's Automotive Yearbook. \n2) Personal Auto Manuals, Insurance Services Office, 160 Water Street, New York, NY 10038 \n3) Insurance Collision Report, Insurance Institute for Highway Safety, Watergate 600, Washington, DC 20037\n\n### Content\n\nThis data set consists of three types of entities: (a) the specification of an auto in terms of various characteristics, (b) its assigned insurance risk rating, (c) its normalized losses in use as compared to other cars. The second rating corresponds to the degree to which the auto is more risky than its price indicates. Cars are initially assigned a risk factor symbol associated with its price. Then, if it is more risky (or less), this symbol is adjusted by moving it up (or down) the scale. Actuarians call this process \"symboling\". A value of +3 indicates that the auto is risky, -3 that it is probably pretty safe. \n\nThe third factor is the relative average loss payment per insured vehicle year. This value is normalized for all autos within a particular size classification (two-door small, station wagons, sports/speciality, etc...), and represents the average loss per car per year. \n\nNote: Several of the attributes in the database could be used as a \"class\" attribute.\n\n\n### Inspiration\n\nPlease bring it on whatever inferences you can get it.","url":"https://www.kaggle.com/toramky/automobile-dataset","version":2,"keywords":["subject, science and technology, transportation, automobiles and vehicles"],"license":{"@type":"CreativeWork","name":"Unknown","url":""},"identifier":["1291"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"Ramakrishnan Srinivasan","url":"https://www.kaggle.com/toramky","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/toramky/automobile-dataset/download?datasetVersionNumber=2","contentSize":"4991 bytes"}],"commentCount":5,"dateModified":"2017-05-24T04:45:13.673Z","discussionUrl":"https://www.kaggle.com/toramky/automobile-dataset/discussion","alternateName":"Dataset consist of various characteristic of an auto","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/1291/2317/5f8baa83e9cf3ebd0c66559b31feacc2/dataset-card.jpg","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":5},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":33632},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":231905},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":297}]}</script>
+
+
+  
+    
+
+  
+    
+    
+<script nonce="e6NzPqtsUlsdxDxl2jpu&#x2B;w==" type="text/javascript">
+    var Kaggle = window.Kaggle || {};
+
+    Kaggle.Current = {
+        antiForgeryToken: 'CfDJ8L8BvZG-E0ZPkNZKnO2avD92hWA5KgAxJuhFvdhifYLr09i18_cbW7vbcIz6lxNIQEAEr4ndNCP578kdpo3aVueizON_51FY1LnJCpV9MsmHSg',
+        isAnonymous: true,
+        analyticsToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjA0MzI0ODAsIlVzZXJJZCI6MH0.5JkoMjwo2NgVYuDDEEYBcPPuyu1OgGV4csiT_8UHA4g',
+        analyticsTokenExpiry: 15,
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+        Kaggle.Current.log = function(){};
+        Kaggle.Current.warn = function(){};
+
+    const decodeUserProperty = function (escapedUserProperty) {
+        escapedUserProperty = escapedUserProperty || "";
+        try {
+            const textVersion = new DOMParser().parseFromString(escapedUserProperty, "text/html").documentElement.textContent;
+            if (textVersion) {
+                return textVersion;
+            }
+        } catch(ex) {}
+        return escapedUserProperty;
+    }
+    Kaggle.Current.userDisplayName = decodeUserProperty(Kaggle.Current.userDisplayNameEscaped);
+    Kaggle.Current.userEmail = decodeUserProperty(Kaggle.Current.userEmailEscaped); 
+</script>
+
+    
+
+<script nonce="e6NzPqtsUlsdxDxl2jpu&#x2B;w==" type="text/javascript">
+    var Kaggle = window.Kaggle || {};
+    Kaggle.PageMessages = [];
+</script>
+
+
+
+    <script nonce="e6NzPqtsUlsdxDxl2jpu&#x2B;w==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="e6NzPqtsUlsdxDxl2jpu&#x2B;w==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="e6NzPqtsUlsdxDxl2jpu+w==" src="/static/assets/runtime.js?v=e96fda6e3f88f4933af2" data-turbolinks-track="reload"></script>
+  <script nonce="e6NzPqtsUlsdxDxl2jpu+w==" src="/static/assets/vendor.js?v=1abae0bc5a9d72e7b94f" data-turbolinks-track="reload"></script>
+  <script nonce="e6NzPqtsUlsdxDxl2jpu+w==" src="/static/assets/app.js?v=77f3cb8b3450ece437fe" data-turbolinks-track="reload"></script>
+    <script nonce="e6NzPqtsUlsdxDxl2jpu&#x2B;w==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+
+<body data-turbolinks="false">
+  <main>
+    
+
+
+
+
+
+
+<div id="site-container"></div>
+<div data-component-name="NavigationContainer" style="display: flex; flex-direction: column; flex: 1 0 auto;"></div><script class="kaggle-component" nonce="e6NzPqtsUlsdxDxl2jpu+w==">var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({"navigationType":"BOTH_NAV"});performance && performance.mark && performance.mark("NavigationContainer.componentCouldBootstrap");</script>
+<div id="site-body" class="hide">
+    
+
+<div data-component-name="DatasetMaterialContainer" style="display: flex; flex-direction: column; flex: 1 0 auto;"></div><script class="kaggle-component" nonce="e6NzPqtsUlsdxDxl2jpu+w==">var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({"basics":{"datasetId":1291,"slug":"automobile-dataset","title":"Automobile Dataset","description":"### Context \nThis dataset consist of data From 1985 Ward\u0027s Automotive Yearbook. Here are the sources\n\nSources: \n\n1) 1985 Model Import Car and Truck Specifications, 1985 Ward\u0027s Automotive Yearbook. \n2) Personal Auto Manuals, Insurance Services Office, 160 Water Street, New York, NY 10038 \n3) Insurance Collision Report, Insurance Institute for Highway Safety, Watergate 600, Washington, DC 20037\n\n### Content\n\nThis data set consists of three types of entities: (a) the specification of an auto in terms of various characteristics, (b) its assigned insurance risk rating, (c) its normalized losses in use as compared to other cars. The second rating corresponds to the degree to which the auto is more risky than its price indicates. Cars are initially assigned a risk factor symbol associated with its price. Then, if it is more risky (or less), this symbol is adjusted by moving it up (or down) the scale. Actuarians call this process \u0022symboling\u0022. A value of \u002B3 indicates that the auto is risky, -3 that it is probably pretty safe. \n\nThe third factor is the relative average loss payment per insured vehicle year. This value is normalized for all autos within a particular size classification (two-door small, station wagons, sports/speciality, etc...), and represents the average loss per car per year. \n\nNote: Several of the attributes in the database could be used as a \u0022class\u0022 attribute.\n\n\n### Inspiration\n\nPlease bring it on whatever inferences you can get it.","viewCount":231905,"downloadCount":33632,"scriptCount":142,"topicCount":5,"owner":{"id":1019904,"imageUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","name":"Ramakrishnan Srinivasan","profileUrl":"/toramky","slug":"toramky","userTier":"CONTRIBUTOR"},"license":{"id":4,"name":"Unknown"},"overview":"Dataset consist of various characteristic of an auto","collaboratorList":{"owner":{"userId":1019904,"profileUrl":"/toramky","thumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png","name":"Ramakrishnan Srinivasan","slug":"toramky","userTier":"CONTRIBUTOR","type":"OWNER"}},"coverImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/1291/2317/5f8baa83e9cf3ebd0c66559b31feacc2/dataset-cover.jpg","data":{"totalSize":4991,"isFileset":true,"canSeeDownload":true,"firestorePath":"DvzGhzLGRslYqBBpYVmr/versions/AkRx6g93RLhwYpjkCnRE","downloadUrl":"/datasets/toramky/toramky/download?datasetVersionNumber=2","versionId":2355,"id":1291},"voteCount":297,"medalUrl":"/static/images/medals/datasets/goldl@2x.png","downloadUrl":"/datasets/toramky/automobile-dataset/download?datasetVersionNumber=2","lastUpdateTime":"2017-05-24T04:45:13.673Z","datasetVersionNumber":2,"creatorDisplayName":"Ramakrishnan Srinivasan","cardImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/1291/2317/5f8baa83e9cf3ebd0c66559b31feacc2/dataset-card.jpg","categories":{"tags":[{"id":12402,"name":"automobiles and vehicles","fullPath":"subject \u003E science and technology \u003E transportation \u003E automobiles and vehicles","listingUrl":"/datasets?group=public\u0026tagids=12402","description":"The automobile tag is everything about cars. Analyze insurance rates or how far you can go on one gallon of petrol.","datasetCount":4005,"competitionCount":5,"notebookCount":1573,"tagUrl":"/tags/automobiles","displayName":"Automobiles and Vehicles"}]},"datasetExternalUrl":"https://www.kaggle.com/datasets/toramky/automobile-dataset","forumId":3586,"datasetVersionId":2355,"canCreateTasks":true,"moderationStatus":"PRIVATED_MODERATION_STATUS_NO_ABUSE","lastVersionNumber":2,"diffType":"VERSIONED"},"@wf": "Datasets.DatasetMaterialDtoWireFormat3"});performance && performance.mark && performance.mark("DatasetMaterialContainer.componentCouldBootstrap");</script><script nonce="e6NzPqtsUlsdxDxl2jpu&#x2B;w==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: [],
+    });
+</script>
+<script type="text/javascript" nonce="e6NzPqtsUlsdxDxl2jpu&#x2B;w==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const useProdHosts = ["www.kaggle.com", "admin.kaggle.com"];
+    const subdomain = useProdHosts.includes(window.location.hostname) ? "www" : "staging";
+
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    lib.src = `https://${subdomain}.kaggleusercontent.com/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+</div>
+
+
+
+
+  </main>
+</body>
+
+</html>
